@@ -1,0 +1,13 @@
+package emp3;
+
+final class Manager extends Emp {
+	public Manager() {
+		sal=8000;
+		desig="Clerk";
+	}
+	public void raise() {
+		sal +=1000;
+		System.out.println("\nSalary raised----");
+	}
+
+}
