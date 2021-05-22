@@ -1,0 +1,14 @@
+package emp3;
+
+public class Programmer extends Emp {
+	public Programmer() {
+		sal=20000;
+		desig="Clerk";
+	}
+	public void raise() {
+		sal +=5000;
+		System.out.println("\nSalary raised----");
+	}
+
+
+}
