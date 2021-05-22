@@ -1,0 +1,64 @@
+package emp3;
+
+import java.util.Scanner;
+
+public class Employee {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		Emp[] e=new Emp[10];
+		int ch=0,c2=0,i=0;
+		do {
+			System.out.println("n1.Create");
+			System.out.println("2.Display");
+			System.out.println("3.RaiseSalary");
+			System.out.println("4.Exit");
+			System.out.println("Enter your Choice");
+			ch=sc.nextInt();
+			switch(ch) {
+			case 1: do {
+				System.out.println("\n 1.Clerk");
+				System.out.println("2.Programmer");
+				System.out.println("3.Manager");
+				System.out.println("4.Exit");
+				c2=sc.nextInt();
+			switch(c2) {
+			case 1: e[i]=new Clerk();
+			        i++;
+			     break;
+			case 2: e[i]=new Programmer();
+			        i++;
+			     break;
+			case 3: e[i]=new Manager();
+			        i++;
+			      break;
+			}}
+			while(c2!=4);
+			break;
+		case 2: try {
+			for(Emp x:e) {
+				if(x!=null)
+					x.disp();
+			}
+			}catch (Exception ex) {
+				System.out.println("No Records present.........!");
+			}
+			break;
+			case 3: try {
+				for(Emp x:e) {
+					if(x!=null)
+						x.raise();
+				}
+			}catch(Exception ex) {
+				System.out.println("No record Present----");
+			}
+			break;
+			case 4: System.out.println("\nExisting------");	
+			break;
+		default:System.out.println("\n Invalid Choice");
+			}
+		}while(ch!=4);
+		
+			
+			}
+			}
+		
