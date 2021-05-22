@@ -1,0 +1,13 @@
+package emp3;
+
+final class Clerk extends Emp {
+	public Clerk() {
+		sal=8000;
+		desig="Clerk";
+	}
+	public void raise() {
+		sal +=1000;
+		System.out.println("\nSalary raised----");
+	}
+
+}
